@@ -1,0 +1,50 @@
+@import'../components/breakpoints/media';
+
+// .banner-container{
+//   width: auto;
+//   display: grid;
+//   justify-content: center;
+// }
+
+.banner__title {
+  width: auto;
+  font-weight: 700;
+  font-size: 27px;
+  color: #333333;
+  text-align: center;
+}
+
+.banner__image{
+  width: 100%;
+}
+
+.banner__subtitle{
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #333333;
+  margin-top: 15px;
+}
+
+.banner__text{
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  text-align: center;
+}
+
+@include tablet {
+  .banner__image {
+    width: 100%;
+  }
+
+  .banner__text {
+    font-size: 16px;
+  }
+}
+
+@include desktop {
+  .banner__image {
+    width: 100%;
+  }
+}

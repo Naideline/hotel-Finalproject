@@ -1,0 +1,206 @@
+@import'../components/breakpoints/media';
+
+.logIn_container{
+  font-weight: 500;
+  width: auto;
+}
+
+.logIn_form{
+  width: auto;
+  background: #FFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #ff962f;
+}
+
+.logIn_title{
+  position: relative;
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+
+.logIn_title:before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #000;
+  left: 0;
+}
+
+.logIn_subtitle{
+  display: flex;
+  font-size: 18px;
+  color: cadetblue;
+}
+
+.logIn_btns-form{
+  display: grid;
+  gap: .8rem;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 25px;
+}
+
+.logIn_input{
+  position: relative;
+  width: 100%;
+  padding: 20px 12px 5px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.logIn_a{
+  float: right;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.logIn_label{
+  visibility: hidden;
+}
+
+.logIn_btn{
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.logIn_btn-changes{
+  background-color: #ff962f;
+  color: #FFF;
+}
+
+.logIn_btn-changes1{
+  background-color: #FFF;
+  color: #ff962f;
+  border: #ff962f solid 1px;
+}
+
+.logIn_span{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  color: #ff962f;
+}
+
+.logIn_span::before,
+.logIn_span::after{
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin: auto;
+}
+
+.logIn_span::before{
+  margin-left: 10px;
+}
+
+.logIn_span::after{
+  margin-right: 10px;
+}
+
+@include tablet{
+  .logIn_container{
+    display: grid;
+    place-content: center;
+  }
+
+  .logIn_form{
+    display: grid;
+    width: 72vh;
+    height: 662px;
+    align-items: center;
+  }
+
+  .logIn_title{
+    font-size: 50px;
+  }
+
+  .logIn_subtitle{
+    font-size: 25px;
+  }
+
+  .logIn_label{
+    font-size: 16px;
+    visibility: visible;
+  }
+
+  .logIn_input{
+    height: 3rem;
+  }
+
+  #input::placeholder{
+    visibility: hidden;
+  }
+
+  .logIn_a{
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .logIn_span{
+    font-size: 24px;
+  }
+
+  .logIn_btn{
+    font-size: 1.8rem;
+  }
+}
+
+@include desktop{
+  .logIn_container{
+    display: grid;
+    place-content: center;
+  }
+
+  .logIn_form{
+    width: 87vh;
+    height: 100vh;
+  }
+
+  .logIn_title{
+    font-size: 60px;
+  }
+
+  .logIn_subtitle{
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+
+  .logIn_label{
+    font-size: 20px;
+    visibility: visible;
+  }
+
+  .logIn_input{
+    height: 8vh;
+  }
+
+  #input::placeholder{
+    visibility: hidden;
+  }
+
+  .logIn_a{
+    font-size: 30px;
+    margin-top: 18px;
+  }
+
+  .logIn_btns-form{
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .logIn_btn{
+    height: 12vh;
+    font-size: 2rem;
+  }
+
+  .logIn_span{
+    font-size: 30px;
+  }
+}

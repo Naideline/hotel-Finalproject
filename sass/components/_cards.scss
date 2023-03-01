@@ -1,0 +1,86 @@
+@import'../components/breakpoints/media';
+
+.card-container{
+  display: grid;
+  justify-items: center;
+}
+
+.card-general{
+  width: 70%;
+  background-color: rgb(225, 225, 225);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-bottom: 10px;
+  display: grid;
+  justify-content: center;
+}
+
+.card__imagen{
+  width: 100%;
+}
+
+.card-image2 {
+  width: 719px;
+}
+
+.card-image3 {
+  width: 719px;
+}
+
+.card__text{
+  font-weight: 500;
+  font-size: 16px;
+  width: auto;
+  color: #333333;
+  text-align: center;
+  padding: 10px;
+}
+
+@include tablet {
+  .card-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+
+  .card-general {
+    width: 218px;
+    margin-left: 10px;
+  }
+  
+  .card__imagen{
+    width: 218px;
+    height: 120px;
+  }
+
+  .card-image1 {
+    margin-top: -16px;
+  }
+
+  .card__text {
+    padding: 12px;
+  }
+}
+
+@include desktop {
+  .card-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -10px;
+  }
+
+  .card-general {
+    width: 265px;
+    margin-left: 20px;
+  }
+
+  .card__imagen {
+    height: 100%;
+  }
+
+  .card__text {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,111 @@
+@import'../components/breakpoints/media';
+
+.hotelQ_form {
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: 27px 60px;
+  background: #fff;
+}
+
+.hotelQ_title {
+  border-bottom: 2px solid #1161ed;
+  padding-left: 12px;
+  font-size: 25px;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: grid;
+  font-weight: 100;
+  place-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hotelQ_subtitle {
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 18px;
+  opacity: 0.4; 
+  display: inline-block;
+  position: relative;
+  top: -61px;
+  left: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hotelQ_subtitle-fixed {
+  top: -100px;
+  left: 15px;
+}
+
+.hotelQ_input {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  background: #EEEEEE;
+  border: 2px solid rgba(255, 255, 255, 0);
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+  color: #000;
+  padding: 7px;
+}
+
+.hotelQ_input-fixed {
+  height: 80px;
+}
+
+.hotelQ_btn{
+  background-color: #1161ed;
+  color: #FFF;
+  width: 80%;
+  padding: 10px 20px;
+  display: grid;
+  place-content: center;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10%;
+}
+
+@include tablet{
+  .hotelQ_title{
+    font-size: 32px;
+  }
+
+  .hotelQ_subtitle {
+    font-size: 20px;
+  }
+
+  .hotelQ_input{
+    margin-top: 20px;
+  }
+}
+
+@include desktop{
+  .hotelQ_title{
+    font-size: 38px;
+  }
+
+  .hotelQ_subtitle {
+    font-size: 25px;
+    top: -78px;
+  }
+
+  .hotelQ_subtitle-fixed{
+    top: -127px;
+  }
+
+  .hotelQ_input{
+    margin-top: 30px;
+    height: 50px;
+  }
+
+  .hotelQ_input-fixed{
+    height: 100px;
+  }
+}

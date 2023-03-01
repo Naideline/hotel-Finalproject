@@ -1,0 +1,21 @@
+@import'../components/breakpoints/media';
+
+.button--form{
+  display: grid;
+  place-content: center;
+  width: auto;
+}
+
+.btn{
+  width: 140px;
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 7px;
+  background-color: #2196f3;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

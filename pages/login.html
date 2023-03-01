@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Log In</title>
+</head>
+<body>
+  <header>
+    <nav class="nav__header">
+      <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+      <label for="nav-checkbox" class="toggle">
+        <img class="menu" src="../images/menu.svg" alt>
+        <img  class="close" src="../images/x.svg" alt>
+      </label>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            <img class="logo" src="../images/go-travel-logo.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../pages/destinations/destinations-list.html">Destinations</a>
+        </li>
+        <li>
+          <a href="../pages/hotels-list.html">Hotels</a>
+        </li>
+        <li>
+          <a href="../pages/login.html">Sing Up</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="logIn_container">
+    <form class="logIn_form">
+      <h1 class="logIn_title">Log in <span class="logIn_subtitle">Please enter your details</span></h1>
+      <label for="email" class="logIn_label">Email</label>
+      <input type="email" name="email" class="logIn_input" id="input" placeholder="Email">
+      <label for="Password" class="logIn_label">Password</label>
+      <input type="password" name="password" class="logIn_input" id="input" placeholder="Password">
+      <a href="#" class="logIn_a">Forgot Password?</a>
+      <div class="logIn_btns-form">
+        <button class="logIn_btn logIn_btn-changes">Sign in</button> 
+        <span class="logIn_span">Or</span>
+        <button class="logIn_btn logIn_btn-changes1">Create an account</button>
+      </div>
+    </form>
+  </div>
+  <footer> 
+    <div class="footer-content">
+      <p class="footer-title">GoTravel</p>
+      <p class="info__line">Information</p>
+      <ul class="">
+        <li class="info__line">About GoTravel</li>
+      </ul>
+      <p class="">Contact us</p>
+      <ul class="">
+        <li>
+          <address>
+            <p class="">176 Street, New York,NY 10014</p>
+          </address>
+        </li>
+        <li>
+          <address class="">
+            <a class="address" href="tel:+1565231-5645">+1(565)231-5645</a>
+          </address>
+        </li>
+        <li>
+          <address class="info__line">
+            <a class="address" href="mailto:gotravel@example.com">gotravel@example.com</a>
+          </address>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="rights-reserved">© GoTravel 2023  All right reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

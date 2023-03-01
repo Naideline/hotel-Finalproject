@@ -1,0 +1,116 @@
+@import'../components/breakpoints/media';
+
+.main-tittle {
+  position: relative;
+  color: #000;
+  padding: 15px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.main-subtittle {
+  padding: 15px;
+  font-size: 19px;
+  margin: auto;
+  text-align: center;
+}
+
+.main-text {
+  margin: auto;
+  text-align: center;
+  padding: 10px 0 40px 0;
+  font-size: 14px;
+  width: 80%;
+}
+
+.galery-image {
+  width: 45%;
+}
+
+.galery-container div {
+  display: flex;
+}
+
+.galery-container {
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.list__btn2 {
+  width: 147px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  border: 1px solid transparent;
+  margin-top: 6px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin: 2rem auto;
+  color: #FFF;
+  text-decoration: none;
+}
+
+@include tablet {
+  .main-tittle {
+    font-size: 40px;
+  }
+
+  .main-subtittle {
+    font-size: 25px;
+  }
+
+  .main-text {
+    font-size: 17px;
+    width: 80%;
+  }
+
+  .galery-image {
+    width: 45%;
+    margin: 1rem;
+  }
+
+  .list__btn2 {
+    width: 147px;
+    height: 45px;
+    font-size: 26px;
+  }
+}
+
+@include desktop {
+  .main-tittle {
+    font-size: 50px;
+    padding: 30px;
+  }
+
+  .galery-container {
+    margin: 0 10rem;
+  }
+
+  .main-subtittle {
+    font-size: 40px;
+  }
+
+  .main-text {
+    font-size: 17px;
+    width: 50%;
+  }
+
+  .galery-image {
+    width: 45%;
+    margin: 1rem;
+  }
+
+  .list__btn2 {
+    width: 157px;
+    height: 60px;
+    font-size: 26px;
+   
+  }
+}

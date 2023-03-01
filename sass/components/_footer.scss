@@ -1,0 +1,56 @@
+@import'../components/breakpoints/media';
+
+footer {
+  background-color: cadetblue;
+  color: #fff;
+  font-size: 18px;
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  line-height: 32px;
+  margin-top: 35px;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.rights-reserved {
+  text-align: center;
+  color: rgb(222, 222, 222);
+}
+
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: -14px;
+}
+
+.footer-description {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.address {
+  text-decoration: none;
+  color: #fff;
+}
+
+.info__line {
+  border-bottom: 1px solid;
+}
+
+@include tablet {
+  footer {
+    font-size: 21px;
+    width: auto;
+  }
+}
+
+@include desktop {
+  footer {
+    font-size: 23px;
+  }
+}
