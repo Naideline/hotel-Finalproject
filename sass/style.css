@@ -795,6 +795,7 @@ footer {
     font-size: 26px;
   }
 }
+
 .carousel-container {
   display: flex;
   flex-direction: column;
@@ -839,8 +840,8 @@ footer {
   cursor: pointer;
 }
 
-.carousel-prev:hover, .carousel-next:hover {
-  background-color: rgb(44, 214, 22);
+.carousel-prev, .carousel-next {
+  background-color: aqua;
 }
 
 body {
