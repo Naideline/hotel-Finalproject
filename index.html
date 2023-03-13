@@ -38,7 +38,7 @@
         </li>
         <li>
           <p><a href="#" id="signup-link">Sing up</a></p>
-	      <!-- Agrega el HTML del formulario modal, con un ID para poder manipularlo con JavaScript -->
+	      <!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con el DOM en JavaScript -->
 	<div id="signup-modal" class="logIn_container" style="display: none;">
 		<form class="logIn_form" action="#" method="POST">
 			<div class="logIn_title">Log in</div>
@@ -61,18 +61,18 @@
 		</form>
     <script>
       $(document).ready(function() {
-  // Obtener referencias a los elementos relevantes del DOM
+  // Para obtener referencias a los elementos relevantes del DOM
   var $signupLink = $('#signup-link');
   var $signupModal = $('#signup-modal');
   var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
 
-  // Manejar el evento click en el enlace de registro
+  // Para manejar el evento click en el enlace de registro
   $signupLink.on('click', function(event) {
     event.preventDefault();
     $signupModal.fadeIn();
   });
 
-  // Manejar el evento click en el botón de cerrar del formulario
+  // para manejar el evento click en el botón de cerrar del formulario
   $signupModalClose.on('click', function(event) {
     event.preventDefault();
     $signupModal.fadeOut();
