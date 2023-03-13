@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manzanillo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--biblioteca jQuery-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -36,7 +37,49 @@
           <a href="../pages/hotels-list.html">Hotels</a>
         </li>
         <li>
-          <a href="../pages/login.html">Sing Up</a>
+          <p><a href="#" id="signup-link">Sing up</a></p>
+          <!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con el DOM en JavaScript -->
+    <div id="signup-modal" class="logIn_container" style="display: none;">
+      <form class="logIn_form" action="#" method="POST">
+        <div class="logIn_title">Log in</div>
+        <div class="logIn_subtitle">Please enter your details:</div>
+        <div>
+          <label class="logIn_label" for="name">User:</label>
+          <input type="text" name="email" class="logIn_input" id="input" placeholder="User" required>
+        </div>
+        <div>
+          <label class="logIn_label" for="email">Password:</label>
+          <input type="password" name="password" class="logIn_input" id="input" placeholder="Password" required>
+          <a href="#" class="logIn_a">Forgot Password?</a>
+        </div>
+        <div class="logIn_btns-form">
+          <input class="logIn_btn logIn_btn-changes" type="submit" value="Sing in">
+        </div>
+        <span class="logIn_span">Or</span>
+        <button class="logIn_btn logIn_btn-changes1">Create an account</button>
+        <a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
+      </form>
+      <script>
+        $(document).ready(function() {
+    // Para obtener referencias a los elementos relevantes del DOM
+    var $signupLink = $('#signup-link');
+    var $signupModal = $('#signup-modal');
+    var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
+  
+    // Para manejar el evento click en el enlace de registro
+    $signupLink.on('click', function(event) {
+      event.preventDefault();
+      $signupModal.fadeIn();
+    });
+  
+    // para manejar el evento click en el botón de cerrar del formulario
+    $signupModalClose.on('click', function(event) {
+      event.preventDefault();
+      $signupModal.fadeOut();
+    });
+  });
+      </script>
+    </div>
         </li>
       </ul>
     </nav>
