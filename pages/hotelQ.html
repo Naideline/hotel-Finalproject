@@ -82,24 +82,28 @@
       </ul>
     </nav>
   </header>
+  
+<!--Form que envia un correoo-->
   <div class="hotelQ_form">
-    <form method='POST' action='/php/enviar.php'>
-      <h2 class="hotelQ_title">Send your question to the hotel</h2>
-      <input type="text" class="hotelQ_input" name="username">
-      <span class="hotelQ_subtitle">username</span>
-      <br>
-      <input type="email" class="hotelQ_input" name="email">
-      <span class="hotelQ_subtitle">email</span>
-      <br>
-      <input type="password" class="hotelQ_input">
-      <span class="hotelQ_subtitle">password</span>
-      <br>
-      <input type="text" class="hotelQ_input hotelQ_input-fixed">
-      <span class="hotelQ_subtitle hotelQ_subtitle-fixed">Question</span>
-      <br>
-      <button class="hotelQ_btn">Submit</button>
+    <h2 class="hotelQ_title">Send your question to the Hotel</h2>
+    <form action="https://formsubmit.co/riveranaidelin3@gmail.com" method="POST"><!--correo al que se envía-->
+      <input type="text" name="username" class="hotelQ_input">
+      <label for="username" class="hotelQ_subtitle">username</label>
+      
+      <input type="email" name="email" class="hotelQ_input">
+      <label for="email" class="hotelQ_subtitle">email</label>
+
+      <input type="text" name="asunto" class="hotelQ_input">
+      <label for="asunto" class="hotelQ_subtitle">Asunto</label>
+
+      <textarea name="question" class="hotelQ_input hotelQ_input-fixed"></textarea>
+      <label for="question" class="hotelQ_subtitle hotelQ_subtitle-fixed">question</label>
+
+      <button  type="submit" value="enviar" class="hotelQ_btn">Submit</button>
     </form>
   </div>
+<!--Form que envia un correoo-->
+
 
   <footer>
     <div class="footer-content">
