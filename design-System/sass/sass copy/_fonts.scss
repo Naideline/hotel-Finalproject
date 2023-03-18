@@ -1,0 +1,28 @@
+@mixin Fonts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+
+}
+
+.font{
+  font-family: 'Krub', sans-serif;
+  @include Fonts;
+}
+
+.font-2{
+  font-family: 'Inter', sans-serif;
+  @include Fonts;
+}
+
+.font-3{
+  font-family: 'Itim', cursive;
+  @include Fonts;
+}
+
+.font-4{
+  font-family: 'Italiana', serif;
+  @include Fonts;
+}

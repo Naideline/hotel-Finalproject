@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Template sass</title>
+  <link rel="stylesheet" href="./public/css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <Section class="buttons">
+    <div class="buttons__titulo">
+      <h1 class="buttons__titulo--color">Header</h1>
+    </div>
+  </Section>
+
+<header>
+  <nav class="nav__header">
+    <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+    <label for="nav-checkbox" class="toggle">
+      <img class="menu" src="./img/svg/menu.svg" alt>
+      <img class="close" src="./img/svg/x.svg" alt>
+    </label>
+    <ul class="menu">
+      <li>
+        <a href="#">
+          <img class="logo" src="./img/svg/go-travel-logo.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="pages/destinations/destinations-list.html">Destinations</a>
+      </li>
+      <li>
+        <a href="pages/hotels-list.html">Hotels</a>
+      </li>
+      <li>
+        <p><a href="#" id="signup-link">Sign up</a></p>
+	      
+  <!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con el DOM en JavaScript -->
+	<div id="signup-modal" class="logIn_container" style="display: none;">
+		<form class="logIn_form" action="#" method="POST">
+			<div class="logIn_title">Log in</div>
+			<div class="logIn_subtitle">Please enter your details:</div>
+		<div>
+			<label class="logIn_label" for="name">User:</label>
+			<input type="text" name="email" class="logIn_input" id="input" placeholder="User" required>
+		</div>
+		<div>
+			<label class="logIn_label" for="email">Password:</label>
+      <input type="password" name="password" class="logIn_input" id="input" placeholder="Password" required>
+      <a href="#" class="logIn_a">Forgot Password?</a>
+		</div>
+		<div class="logIn_btns-form">
+			<input class="logIn_btn logIn_btn-changes" type="submit" value="Sing in">
+		</div>
+    <span class="logIn_span">Or</span>
+    <button class="logIn_btn logIn_btn-changes1">Create an account</button>
+    <a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
+		</form>
+  
+  <script>
+$(document).ready(function() {
+  // Para obtener referencias a los elementos relevantes del DOM
+var $signupLink = $('#signup-link');
+var $signupModal = $('#signup-modal');
+var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
+
+  // Para manejar el evento click en el enlace de registro
+  $signupLink.on('click', function(event) {
+  event.preventDefault();
+  $signupModal.fadeIn();
+});
+
+  // para manejar el evento click en el botón de cerrar del formulario
+  $signupModalClose.on('click', function(event) {
+  event.preventDefault();
+  $signupModal.fadeOut();
+});
+});
+  </script>
+    </div>
+    </li>
+    </ul>
+    </nav>
+</header>
+
+
+  <Section class="buttons">
+    <div class="buttons__titulo">
+      <h1 class="buttons__titulo--color">Section Buttons</h1>
+    </div>
+  </Section>
+
+  <section>
+    <div class="carousel-controls">
+      <button class="carousel-prev">Anterior</button>
+      <button class="carousel-next">Siguiente</button>
+    </div>
+
+    <div class="button--form">
+      <a class="btn" href="../pages/hotelQ.html">form</a>
+    </div>
+
+    <div>
+      <button class="hotelQ_btn">Submit</button>
+    </div>
+  </section>
+
+
+  <Section class="buttons">
+    <div class="buttons__titulo">
+      <h1 class="buttons__titulo--color">Colors</h1>
+    </div>
+  </Section>
+
+  <section class="Color">
+    <div class="Color__h1">
+      <h1 class="Color__h1--color">#7D4427</h1>
+    </div>
+    <div class="Color__h1-2">
+      <h1 class="Color__h1--color">#A2C523</h1>
+    </div>
+    <div class="Color__h1-3">
+      <h1 class="Color__h1--color">#2988BC</h1>
+    </div>
+  </section>
+  
+  <section class="Color">
+    <div class="Color__h1-4">
+      <h1 class="Color__h1--color">#BA5536</h1>
+    </div>
+    <div class="Color__h1-5">
+      <h1 class="Color__h1--color">#81cc98</h1>
+    </div>
+    <div class="Color__h1-6">
+      <h1 class="Color__h1--color">#2C7873</h1>
+    </div>
+    <div class="Color__h1-7">
+      <h1 class="Color__h1--color">#01424A</h1>
+    </div>
+  </section>
+
+
+  <Section class="buttons">
+    <div class="buttons__titulo">
+      <h1 class="buttons__titulo--color">Fonts</h1>
+    </div>
+  </Section>
+
+  <section class="font">
+    <div>
+      <h1>Montserrat</h1>
+      <p>Nulla quis lacus accumsan, pellentesque augue vitae, mattis risus. Pellentesque turpis nibh, 
+        efficitur eget maximus non, condimentum et lorem. Vestibulum ..</p>
+    </div>
+  </section>
+
+
+  <Section class="buttons">
+    <div class="buttons__titulo">
+      <h1 class="buttons__titulo--color">Background-color-footer</h1>
+    </div>
+<footer>
+  <div class="footer-content">
+    <p class="footer-title">GoTravel</p>
+    <p class="info__line">Information</p>
+    <ul class="">
+      <li class="info__line">About GoTravel</li>
+    </ul>
+    <p class="">Contact us</p>
+    <ul class="">
+      <li>
+        <address>
+          <p class="">176 Street, New York,NY 10014</p>
+        </address>
+      </li>
+      <li>
+        <address class="">
+          <a class="address" href="tel:+1565231-5645">+1(565)231-5645</a>
+        </address>
+      </li>
+      <li>
+        <address class="info__line">
+          <a class="address" href="mailto:gotravel@example.com">gotravel@example.com</a>
+        </address>
+      </li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p class="rights-reserved">© GoTravel 2023  All Right Reserved</p>
+  </div>
+</footer>
+
+</body>
+
+</html>

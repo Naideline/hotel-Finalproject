@@ -1,0 +1,18 @@
+.buttons{
+  margin-top: 5%;
+  padding-left: 5%;
+}
+
+.buttons__titulo{
+  background-color: $colorSecundary;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+
+.buttons__titulo--color{
+  color: $colorPrimary;
+  display: flex;
+  align-items: center;
+  padding: 2% 2% 2% 2%;
+  justify-content: center;
+}
