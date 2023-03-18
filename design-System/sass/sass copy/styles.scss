@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+display: flex;
+flex-direction: column;
+}
+
+@import "_buttons.scss";
+@import "_icons.scss";
+@import "_img.scss";
+@import "_paletaColors.scss";
+@import "_fonts.scss";
