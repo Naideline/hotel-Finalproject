@@ -696,3 +696,37 @@ body {
   .carousel-prev:hover, .carousel-next:hover {
     background-color:rgb(44, 214, 22)
   }
+  /* Estilo para los botones de los tabs */
+.tab button {
+  background-color: #2196f3;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1% 2.5%;
+  transition: 0.3s;
+  font-size: 16px;
+  color: white;
+  border-radius: 7%;
+  text-decoration: underline;
+  margin-left: 45%;
+  margin-top: 3%;
+}
+
+/* Estilo para el botón del tab activo */
+.tab button.active {
+  background-color: #2c787381;
+}
+
+/* Estilo para el contenido de los tabs */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin-top: 3%;
+}
+
+/* Estilo para el contenido de tab activo */
+.tabcontent.active {
+  display: block;
+}

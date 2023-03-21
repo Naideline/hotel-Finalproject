@@ -26,3 +26,4 @@ function mostrarContenido() {
     contenidoHotel.style.display = "none";
   }
 }
+
