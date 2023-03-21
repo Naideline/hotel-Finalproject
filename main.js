@@ -3,6 +3,23 @@ const carousel = document.querySelector('.carousel-items');
 const prevBtn = document.querySelector('.carousel-prev');
 const nextBtn = document.querySelector('.carousel-next');
 
+
+//Función para el consumo de la información del API
+
+async function getData(){
+  try{
+    const api =
+    "https://6400566763e89b0913ac7551.mockapi.io/destination"
+    const data = await fetch(api)
+    const response = await data.json()
+    console.log(response)
+  } catch(error){
+    console.log(error)
+  }
+}
+
+getData()
+
 // Establecemos el número de elementos por página y el índice actual
 const itemsPerPage = 4;
 let currentPage = 1;
