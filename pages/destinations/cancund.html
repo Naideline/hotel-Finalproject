@@ -57,26 +57,7 @@
         <button class="logIn_btn logIn_btn-changes1">Create an account</button>
         <a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
       </form>
-      <script>
-        $(document).ready(function() {
-    // Para obtener referencias a los elementos relevantes del DOM
-    var $signupLink = $('#signup-link');
-    var $signupModal = $('#signup-modal');
-    var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
-  
-    // Para manejar el evento click en el enlace de registro
-    $signupLink.on('click', function(event) {
-      event.preventDefault();
-      $signupModal.fadeIn();
-    });
-  
-    // para manejar el evento click en el botón de cerrar del formulario
-    $signupModalClose.on('click', function(event) {
-      event.preventDefault();
-      $signupModal.fadeOut();
-    });
-  });
-      </script>
+      <script src="../../form.js"></script>
     </div>
         </li>
       </ul>
@@ -86,28 +67,51 @@
     <h1 class="main-tittle">Cancún</h1>
     <img class="main-image" src="../../images/cancund1.jpg" alt="imagen about cancun">
     <h2 class="main-subtittle">About Cancún</h2>
-    <p class="main-text">Cancun is a city in Mexico located on the Yucatan peninsula bordering the Caribbean Sea.
-      Cancun is also a popular destination for students during the university vacation period in the spring, which
-      is known for its beaches, numerous resorts, and nightlife.</p>
   </main>
-  <section class="galery-container">
-    <div>
-      <img class="galery-image" src="../../images/cancundd2.jpg" alt=" imagen about Cancun">
-
-      <img class="galery-image" src="../../images/cancund3.jpg" alt="imagen about Cancun">
+  <div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'hotels')">Hotels</button>
+    <button class="tablinks" onclick="openTab(event, 'details')">Details</button>
+  </div>
+  
+  <div id="hotels" class="tabcontent">
+    <div class="card">
+      <a href="../cancun.html"><img src="../../images/hotelNomada.jpg.crdownload" alt="Hotel 1"></a>
+      <h3>Hotel Xcaret Mexico</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <div>
-      <img class="galery-image" src="../../images/cancund4.jpg" alt="imagen about Cancun">
-
-      <img class="galery-image" src="../../images/cancund5.jpg" alt=" imagen about Cancun">
+    
+    <div class="card">
+      <a href="../cancun.html"><img src="../../images/cancund7.webp" alt="Hotel 2"></a>
+      <h3>Hotel Bella Vista</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <div>
-      <img class="galery-image" src="../../images/cancund6.jpg" alt=" imagen about Cancun">
-
-      <img class="galery-image" src="../../images/cancund7.webp" alt=" imagen about Cancun">
+    
+    <div class="card">
+      <a href="../cancun.html"><img src="../../images/cancundd2.jpg" alt="Hotel 3"></a>
+      <h3>Hotel Margarita</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <a class="list__btn2" href="../cancun.html">Hotel</a>
-  </section>
+  </div>
+  
+  <div id="details" class="tabcontent">
+    <p class="parraf">Cancun is a city in Mexico located on the Yucatan peninsula bordering the Caribbean Sea. 
+      Cancun is also a popular destination for students during the university vacation period in the spring, 
+      which is known for its beaches, numerous resorts, and nightlife.</p>
+  </div>
+
+  <button class="close-btn" onclick="closeTabs()">Close</button>
+
+  <script src="../../tap.js"></script>
+
   <footer> 
     <div class="footer-content">
       <p class="footer-title">GoTravel</p>

@@ -57,26 +57,7 @@
         <button class="logIn_btn logIn_btn-changes1">Create an account</button>
         <a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
       </form>
-      <script>
-        $(document).ready(function() {
-    // Para obtener referencias a los elementos relevantes del DOM
-    var $signupLink = $('#signup-link');
-    var $signupModal = $('#signup-modal');
-    var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
-  
-    // Para manejar el evento click en el enlace de registro
-    $signupLink.on('click', function(event) {
-      event.preventDefault();
-      $signupModal.fadeIn();
-    });
-  
-    // para manejar el evento click en el botón de cerrar del formulario
-    $signupModalClose.on('click', function(event) {
-      event.preventDefault();
-      $signupModal.fadeOut();
-    });
-  });
-      </script>
+      <script src="../../form.js"></script>
     </div>
         </li>
       </ul>
@@ -86,27 +67,50 @@
     <h1 class="main-tittle">Bocas del toro</h1>
     <img class="main-image" src="../../images/bocas7.jpg" alt="imagen about Bocas del toro">
     <h2 class="main-subtittle">About Bocas del Toro</h2>
-    <p class="main-text">This is an archipelago that is located west of Panama, very close to the border with Costa Rica. It is made up of
-         both a mainland and islands, having a total of 9 along with 52 cays and many islets.</p>
   </main>
-  <section class="galery-container">
-    <div>
-      <img class="galery-image" src="../../images/bocas2.jpg" alt=" imagen about Bocas del toro">
-
-      <img class="galery-image" src="../../images/bocas3.jpg" alt="imagen about Bocas del toro">
-    </div>
-    <div>
-      <img class="galery-image" src="../../images/bocas4.jpg" alt="imagen about Bocas del toro">
+  <div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'hotels')">Hotels</button>
+    <button class="tablinks" onclick="openTab(event, 'details')">Details</button>
+  </div>
   
-     <img class="galery-image" src="../../images/bocas5.jpg" alt=" imagen about Bocas del toro">
+  <div id="hotels" class="tabcontent">
+    <div class="card">
+      <a href="../bocasDelToroH.html"><img src="../../images/bocas7.jpg" alt="Hotel 1"></a>
+      <h3>Bocas del Toro Louge</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <div>
-      <img class="galery-image" src="../../images/bocas6.jpg" alt="imagen about Bocas del toro">
+    
+    <div class="card">
+      <a href="../bocasDelToroH.html"><img src="../../images/bocas6.jpg" alt="Hotel 2"></a>
+      <h3>Hotel The Pelican Sea</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
+    </div>
+    
+    <div class="card">
+      <a href="../bocasDelToroH.html"><img src="../../images/bocas5.jpg" alt="Hotel 3"></a>
+      <h3>Hotel Panamá</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
+    </div>
+  </div>
+  
+  <div id="details" class="tabcontent">
+    <p class="parraf">This is an archipelago that is located west of Panama, 
+      very close to the border with Costa Rica. It is made up of both a mainland 
+      and islands, having a total of 9 along with 52 cays and many islets..</p>
+  </div>
 
-      <img class="galery-image" src="../../images/bocas1.jpg" alt="imagen about Bocas del toro">
-    </div>
-    <a class="list__btn2" href="../bocasDelToroH.html">Hotel</a>
-  </section>
+  <button class="close-btn" onclick="closeTabs()">Close</button>
+
+  <script src="../../tap.js"></script>
   <footer> 
     <div class="footer-content">
       <p class="footer-title">GoTravel</p>
