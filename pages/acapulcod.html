@@ -15,155 +15,140 @@
 </head>
 
 <body>
-	<header>
-		<nav class="nav__header">
-			<input type="checkbox" id="nav-checkbox" class="nav-checkbox">
-			<label for="nav-checkbox" class="toggle">
-				<img class="menu" src="../images/menu.svg" alt>
-				<img class="close" src="../images/x.svg" alt>
-			</label>
-			<ul class="menu">
-				<li>
-					<a href="#">
-						<img class="logo" src="../images/go-travel-logo.svg" alt="">
-					</a>
-				</li>
-				<li>
-					<a href="../index.html">Home</a>
-				</li>
-				<li>
-					<a href="../pages/destinations/destinations-list.html">Destinations</a>
-				</li>
-				<li>
-					<a href="../pages/hotels-list.html">Hotels</a>
-				</li>
-				<li>
-					<p><a href="#" id="signup-link">Sign up</a></p>
-					<!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con el DOM en JavaScript -->
-					<div id="signup-modal" class="logIn_container" style="display: none;">
-						<form class="logIn_form" action="#" method="POST">
-							<div class="logIn_title">Log in</div>
-							<div class="logIn_subtitle">Please enter your details:</div>
-							<div>
-								<label class="logIn_label" for="name">User:</label>
-								<input type="text" name="email" class="logIn_input" id="input" placeholder="User" required>
-							</div>
-							<div>
-								<label class="logIn_label" for="email">Password:</label>
-								<input type="password" name="password" class="logIn_input" id="input" placeholder="Password" required>
-								<a href="#" class="logIn_a">Forgot Password?</a>
-							</div>
-							<div class="logIn_btns-form">
-								<input class="logIn_btn logIn_btn-changes" type="submit" value="Sing in">
-							</div>
-							<span class="logIn_span">Or</span>
-							<button class="logIn_btn logIn_btn-changes1">Create an account</button>
-							<a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
-						</form>
-						<script>
-							$(document).ready(function () {
-								// Para obtener referencias a los elementos relevantes del DOM
-								var $signupLink = $('#signup-link');
-								var $signupModal = $('#signup-modal');
-								var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
-
-								// Para manejar el evento click en el enlace de registro
-								$signupLink.on('click', function (event) {
-									event.preventDefault();
-									$signupModal.fadeIn();
-								});
-
-								// para manejar el evento click en el botón de cerrar del formulario
-								$signupModalClose.on('click', function (event) {
-									event.preventDefault();
-									$signupModal.fadeOut();
-								});
-							});
-						</script>
-					</div>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<main class="banner-container">
-		<h1 class="banner__title">Quinta Real, Acapulco</h1>
-		<img class="banner__image" src="../images/acapulco-hotel.jpg" alt="imagen about manzanillo hotel">
-		<h2 class="banner__subtitle">About us</h2>
-		<p class="banner__text">Quinta Real Acapulco is a majestic hotel located in the Zona Diamante, recognized as one of
-			the most important and extraordinary hotels
-			in Mexico since its inauguration in 1998, this luxury Acapulco hotel is an impressive five-story that rises on the
-			beach of Punta Diamante.</p>
-
-			<!--Habitaciones-->
-		<section class="card-container">
-			<div class="card-general"> 
-				<img class="card__imagen" src="../images/master-king-suite.jpg" alt=" imagen about hotel suite">
-				<p class="card__text">
-					Master Suite King Non smoking
-					base price per night: $210 $189</p>
-				<p class="card__text">
-					Master Suite King Non smoking
-					 with breakfast includeds:$225</p>
-				<p class="card__text">Master Suite King Non smoking
-					 with breakfast
-					 and jacuzzi included : $245</p>
-			</div>
-			<div class="card-general">
-				<img class="card__imagen" src="../images/masterDouble.jpg" alt="imagen about hotel room">
-				<p class="card__text">
-					Master 2 Double Beds Non smoking base price per night:
-					$250 $197
-				</p>
-				<p class="card__text">Master 2 Double Beds Non smoking with breakfast included: $236</p>
-				<p class="card__text">
-					Master 2 Double Beds Non smoking with breakfast and jacuzzi included: $256
-				</p>
-			</div>
-			<div class="card-general">
-				<img class="card__imagen" src="../images/masterDoubleNon.jpg" alt="imagen about hotel room">
-				<p class="card__text">Grand Class 2 Double Beds Non Smoking
-					Only 3 rooms left base price per night:
-					$230 $207
-				</p>
-				<p class="card__text">Grand Class 2 Double Beds Non Smoking
-					Only 3 rooms left with breakfast included : $224</p>
-					<p class="card__text">Grand Class 2 Double Beds Non Smoking
-						Only 3 rooms left with breakfast and jacuzzi included : $261</p>
-			</div>
-		</section>
-		<div class="button--form">
-			<a class="btn" href="../pages/hotelQ.html">form</a>
-		</div>
-		<footer>
-			<div class="footer-content">
-				<p class="footer-title">GoTravel</p>
-				<p class="info__line">Information</p>
-				<ul class="">
-					<li class="info__line">About GoTravel</li>
-				</ul>
-				<p class="">Contact us</p>
-				<ul class="">
-					<li>
-						<address>
-							<p class="">176 Street, New York,NY 10014</p>
-						</address>
-					</li>
-					<li>
-						<address class="">
-							<a class="address" href="tel:+1565231-5645">+1(565)231-5645</a>
-						</address>
-					</li>
-					<li>
-						<address class="info__line">
-							<a class="address" href="mailto:gotravel@example.com">gotravel@example.com</a>
-						</address>
-					</li>
-				</ul>
-			</div>
-			<div class="footer-bottom">
-				<p class="rights-reserved">© GoTravel 2023 All right reserved</p>
-			</div>
-		</footer>
+  <header>
+    <nav class="nav__header">
+      <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+      <label for="nav-checkbox" class="toggle">
+        <img class="menu" src="../images/menu.svg" alt>
+        <img  class="close" src="../images/x.svg" alt>
+      </label>
+      <ul class="menu">
+        <li>
+          <a href="#">
+            <img class="logo" src="../images/go-travel-logo.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="../pages/destinations/destinations-list.html">Destinations</a>
+        </li>
+        <li>
+          <a href="../pages/hotels-list.html">Hotels</a>
+        </li>
+        <li>
+          <p><a href="#" id="signup-link">Sign up</a></p>
+          <!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con el DOM en JavaScript -->
+    <div id="signup-modal" class="logIn_container" style="display: none;">
+      <form class="logIn_form" action="#" method="POST">
+        <div class="logIn_title">Log in</div>
+        <div class="logIn_subtitle">Please enter your details:</div>
+        <div>
+          <label class="logIn_label" for="name">User:</label>
+          <input type="text" name="email" class="logIn_input" id="input" placeholder="User" required>
+        </div>
+        <div>
+          <label class="logIn_label" for="email">Password:</label>
+          <input type="password" name="password" class="logIn_input" id="input" placeholder="Password" required>
+          <a href="#" class="logIn_a">Forgot Password?</a>
+        </div>
+        <div class="logIn_btns-form">
+          <input class="logIn_btn logIn_btn-changes" type="submit" value="Sing in">
+        </div>
+        <span class="logIn_span">Or</span>
+        <button class="logIn_btn logIn_btn-changes1">Create an account</button>
+        <a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
+      </form>
+      <script>
+        $(document).ready(function() {
+    // Para obtener referencias a los elementos relevantes del DOM
+    var $signupLink = $('#signup-link');
+    var $signupModal = $('#signup-modal');
+    var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
+  
+    // Para manejar el evento click en el enlace de registro
+    $signupLink.on('click', function(event) {
+      event.preventDefault();
+      $signupModal.fadeIn();
+    });
+  
+    // para manejar el evento click en el botón de cerrar del formulario
+    $signupModalClose.on('click', function(event) {
+      event.preventDefault();
+      $signupModal.fadeOut();
+    });
+  });
+      </script>
+    </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="banner-container">
+    <h1 class="banner__title">Quinta Real, Acapulco</h1>
+    <img class="banner__image"  src="../images/acapulco-hotel.jpg"  alt="imagen about manzanillo hotel">
+    <h2 class="banner__subtitle">About us</h2>
+    <p class="banner__text">Quinta Real Acapulco is a majestic hotel located in the Zona Diamante, recognized as one of the most important and extraordinary hotels
+      in Mexico since its inauguration in 1998, this luxury Acapulco hotel is an impressive five-story that rises on the beach of Punta Diamante.</p>
+  <section class="card-container">
+    <div class="card-general">
+      <img class="card__imagen" src="../images/master-king-suite.jpg" alt=" imagen about hotel suite">
+      <p class="card__text">
+        Master Suite King Non smoking
+        $210$189
+        Per Night</p>
+    </div>
+    <div class="card-general">
+      <img class="card__imagen" src="../images/masterDouble.jpg" alt="imagen about hotel room">
+      <p class="card__text">
+        Master 2 Double Beds Non smoking
+        $210$189
+        Per Night
+      </p>
+    </div>
+    <div class="card-general">
+      <img class="card__imagen" src="../images/masterDoubleNon.jpg" alt="imagen about hotel room">
+      <p class="card__text">Grand Class 2 Double Beds Non Smoking
+        Only 3 rooms left
+        $230$207
+        Per Night
+      </p>
+    </div>
+  </section>
+  <div class="button--form">
+    <a class="btn" href="../pages/hotelQ.html">form</a>
+  </div>
+  <footer> 
+    <div class="footer-content">
+      <p class="footer-title">GoTravel</p>
+      <p class="info__line">Information</p>
+      <ul class="">
+        <li class="info__line">About GoTravel</li>
+      </ul>
+      <p class="">Contact us</p>
+      <ul class="">
+        <li>
+          <address>
+            <p class="">176 Street, New York,NY 10014</p>
+          </address>
+        </li>
+        <li>
+          <address class="">
+            <a class="address" href="tel:+1565231-5645">+1(565)231-5645</a>
+          </address>
+        </li>
+        <li>
+          <address class="info__line">
+            <a class="address" href="mailto:gotravel@example.com">gotravel@example.com</a>
+          </address>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="rights-reserved">© GoTravel 2023  All right reserved</p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,93 @@
+@import'../components/breakpoints/media';
+
+
+/* Style the tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tablinks {
+  background-color: #eee;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.tablinks:hover {
+  background-color: #ddd;
+}
+
+.tabcontent {
+  display: none;
+}
+
+/* Style the cards */
+.card {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 5px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.score {
+  font-size: 18px;
+}
+
+.close-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #FFF;
+}
+
+
+.close-btn:hover {
+  background-color: #aaa;
+}
+
+.parraf{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: #000000;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 2%;
+}

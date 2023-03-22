@@ -57,26 +57,7 @@
         <button class="logIn_btn logIn_btn-changes1">Create an account</button>
         <a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
       </form>
-      <script>
-        $(document).ready(function() {
-    // Para obtener referencias a los elementos relevantes del DOM
-    var $signupLink = $('#signup-link');
-    var $signupModal = $('#signup-modal');
-    var $signupModalClose = $signupModal.find('.logIn_btn-changes1');
-  
-    // Para manejar el evento click en el enlace de registro
-    $signupLink.on('click', function(event) {
-      event.preventDefault();
-      $signupModal.fadeIn();
-    });
-  
-    // para manejar el evento click en el botón de cerrar del formulario
-    $signupModalClose.on('click', function(event) {
-      event.preventDefault();
-      $signupModal.fadeOut();
-    });
-  });
-      </script>
+      <script src="../../form.js"></script>
     </div>
         </li>
       </ul>
@@ -86,29 +67,50 @@
     <h1 class="main-tittle">Bahamas</h1>
     <img class="main-image" src="../../images/bahamas1.jpg" alt="imagen about bahamas">
     <h2 class="main-subtittle">About Bahamas</h2>
-    <p class="main-text">The Bahamas are an archipelago characterized by its corals in the Atlantic Ocean. Among its
-      more than 700
-      islands and keys, there are some that are deserted and others that have very popular tourist complexes.
-    </p>
   </main>
-  <section class="galery-container">
-    <div>
-      <img class="galery-image" src="../../images/bahamas2.jpg" alt=" imagen about Bahamas">
-
-      <img class="galery-image" src="../../images/bahamasHotelO.jpg" alt=" imagen about Bahamas">
+  <div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'hotels')">Hotels</button>
+    <button class="tablinks" onclick="openTab(event, 'details')">Details</button>
+  </div>
+  
+  <div id="hotels" class="tabcontent">
+    <div class="card">
+      <a href="../acapulcod.html"><img src="../../images/hotelBahamas.jpg" alt="Hotel 1"></a>
+      <h3>The Ocean Club, A Four Seasons Resort, Bahamas</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <div>
-      <img class="galery-image" src="../../images/bahamas4.jpg" alt=" imagen about Bahamas">
-
-      <img class="galery-image" src="../../images/bahamas5.jpg" alt=" imagen about Bahamas">
+    
+    <div class="card">
+      <a href="../acapulcod.html"><img src="../../images/bahamasHotelO.jpg" alt="Hotel 2"></a>
+      <h3>Hotel The mountain</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <div>
-      <img class="galery-image" src="../../images/bahamas6.jpg" alt="  imagen about Bahamas">
-
-      <img class="galery-image" src="../../images/bahamas7.jpg" alt=" imagen about Bahamas">
+    
+    <div class="card">
+      <a href="../acapulcod.html"><img src="../../images/bahamas7.jpg" alt="Hotel 3"></a>
+      <h3>Hotel Guacamaya</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <a class="list__btn2" href="../bahamas.html">Hotel</a>
-  </section>
+  </div>
+  
+  <div id="details" class="tabcontent">
+    <p class="parraf">The Bahamas are an archipelago characterized by its 
+      corals in the Atlantic Ocean. Among its more than 700 islands and keys, 
+      there are some that are deserted and others that have very popular tourist complexes..</p>
+  </div>
+
+  <button class="close-btn" onclick="closeTabs()">Close</button>
+
+  <script src="../../tap.js"></script>
   <footer> 
     <div class="footer-content">
       <p class="footer-title">GoTravel</p>

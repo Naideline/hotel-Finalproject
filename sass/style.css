@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .banner__title {
   width: auto;
   font-weight: 700;
@@ -843,6 +844,46 @@ footer {
   background-color: aqua;
 }
 
+/* Estilo para los botones de los tabs */
+.tab button {
+  background-color: #2c7873;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: white;
+  border-radius: 15%;
+  text-decoration: underline;
+}
+
+/* Estilo para el botón del tab activo */
+.tab button.active {
+  background-color: rgba(44, 120, 115, 0.5058823529);
+}
+
+/* Estilo para el contenido de los tabs */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ffffff;
+}
+
+/* Estilo para el contenido de tab activo */
+.tabcontent.active {
+  display: block;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=style.css.map */
+
+.parraf{
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  color: #000000;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 2%;
+}
