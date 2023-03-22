@@ -86,28 +86,49 @@
   <main class="main-container">
     <h1 class="main-tittle">Playa del Carmen</h1>
     <img class="main-image" src="../../images/carmen2.jpg" alt="imagen about Playa del carmen">
-    <h2 class="main-subtittle">About Playa del Carmen</h2>
-    <p class="main-text">Playa del Carmen, once a sleepy fishing village, is now a Riviera Maya destination in its own
-      right.</p>
   </main>
-  <section class="galery-container">
-    <div>
-      <img class="galery-image" src="../../images/carmen1.jpg" alt=" imagen about playa del carmen">
-
-      <img class="galery-image" src="../../images/carmen3.jpg" alt="imagen about playa del carmen">
+  <div class="tabs">
+    <button class="tablinks" onclick="openTab(event, 'hotels')">Hotels</button>
+    <button class="tablinks" onclick="openTab(event, 'details')">Details</button>
+  </div>
+  
+  <div id="hotels" class="tabcontent">
+    <div class="card">
+      <img src="hotel1.jpg" alt="Hotel 1">
+      <h3>Hotel 1</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <div>
-      <img class="galery-image" src="../../images/carmen4.jpg" alt="imagen about playa del carmen">
-
-      <img class="galery-image" src="../../images/carmen5.jpg" alt=" imagen about playa del carmen">
+    
+    <div class="card">
+      <img src="hotel2.jpg" alt="Hotel 2">
+      <h3>Hotel 2</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <div>
-      <img class="galery-image" src="../../images/carmend6.jpg" alt="imagen about playa del carmen">
-
-      <img class="galery-image" src="../../images/carmen7.jpg" alt="imagen about playa del carmen">
+    
+    <div class="card">
+      <img src="hotel3.jpg" alt="Hotel 3">
+      <h3>Hotel 3</h3>
+      <div class="rating">
+        <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="score">5.0</span>
+      </div>
     </div>
-    <a class="list__btn2" href="../xcaret.html">Hotel</a>
-  </section>
+  </div>
+  
+  <div id="details" class="tabcontent">
+    <p>Here you can find more information about the hotels.</p>
+  </div>
+
+  <button class="close-btn" onclick="closeTabs()">Close</button>
+
+  <script src="/tap.js"></script>
+
   <footer> 
     <div class="footer-content">
       <p class="footer-title">GoTravel</p>
