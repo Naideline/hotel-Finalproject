@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +9,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!--biblioteca jQuery-->
 </head>
-
 <body>
   <header>
     <nav class="nav__header">
@@ -36,7 +34,8 @@
         </li>
         <li>
           <p><a href="#" id="signup-link">Sign up</a></p>
-          <!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con el DOM en JavaScript -->
+          <!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con 
+            el DOM en JavaScript -->
           <div id="signup-modal" class="logIn_container" style="display: none;">
             <form class="logIn_form" action="#" method="POST">
               <div class="logIn_title">Log in</div>
@@ -63,14 +62,15 @@
       </ul>
     </nav>
   </header>
-  
-<!--Form que envia un correoo-->
+
+  <!--Form que envia un correoo-->
   <div class="hotelQ_form">
     <h2 class="hotelQ_title">Send your question to the Hotel</h2>
-    <form action="https://formsubmit.co/riveranaidelin3@gmail.com" method="POST"><!--correo al que se envía-->
+    <form action="https://formsubmit.co/riveranaidelin3@gmail.com" method="POST">
+      <!--correo al que se envía-->
       <input type="text" name="username" class="hotelQ_input" required>
       <label for="username" class="hotelQ_subtitle">username</label>
-      
+
       <input type="email" name="email" class="hotelQ_input" required>
       <label for="email" class="hotelQ_subtitle">email</label>
 
@@ -78,12 +78,12 @@
       <label for="asunto" class="hotelQ_subtitle">Asunto</label>
 
       <textarea name="question" class="hotelQ_input hotelQ_input-fixed" required></textarea>
-      <label for="question" class="hotelQ_subtitle hotelQ_subtitle-fixed" >question</label>
+      <label for="question" class="hotelQ_subtitle hotelQ_subtitle-fixed">question</label>
 
-      <button  type="submit" value="enviar" class="hotelQ_btn">Submit</button>
+      <button type="submit" value="enviar" class="hotelQ_btn">Submit</button>
     </form>
   </div>
-<!--Form que envia un correoo-->
+  <!--Form que envia un correoo-->
 
 
   <footer>
