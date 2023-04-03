@@ -74,9 +74,41 @@
       South Beach’s iconic heyday. Or explore the Sunset tower, where its vibrant style and selected pieces offers a
       sense of nostalgia and charm.</p>
   </main>
-  <section class="card-container">
-    <div class="card-general">
-      <img class="card__imagen" src="../images/gardenHouse.jpg" alt=" imagen about hotel suite">
+  <div class="central-tap">
+    <button class="button" id="form">Formulario</button>
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="hotelQ_form">
+      <h2 class="hotelQ_title">Send your question to the Hotel</h2>
+      <form action="https://formsubmit.co/riveranaidelin3@gmail.com" 
+            method="POST" class="modal-form">
+        <input type="text" name="username" 
+               class="hotelQ_input" required>
+        <label for="username" class="hotelQ_subtitle">username</label>
+        <input type="email" name="email" 
+               class="hotelQ_input" required>
+        <label for="email" class="hotelQ_subtitle">email</label>
+        <input type="text" name="asunto" 
+               class="hotelQ_input" required>
+        <label for="asunto" class="hotelQ_subtitle">Asunto</label>
+        <textarea name="question" 
+                  class="hotelQ_input hotelQ_input-fixed" required>
+        </textarea>
+        <label for="question" 
+               class="hotelQ_subtitle hotelQ_subtitle-fixed">question</label>
+        <button type="submit" value="enviar" class="hotelQ_btn">Submit</button>
+      </form>
+    </div>
+    <!--Form que envia un correo-->
+  </div>
+</div>
+    <button class="button" id="details">Detalles</button>
+
+    <div class="cards" id="card1">
+      <img src="../images/gardenHouse.jpg" alt="Imagen del hotel">
+      <h2>Hotel 1</h2>
       <p class="card__text">GARDEN SUITE non smoking 
         base price per night $389 $330</p>
       <p class="card__text">
@@ -86,8 +118,10 @@
         with breakfast
         and jacuzzi included : $245</p>
     </div>
-    <div class="card-general">
-      <img class="card__imagen" src="../images/riverHouse.jpg" alt="imagen about hotel room">
+
+    <div class="cards" id="card2">
+      <img src="../images/riverHouse.jpg" alt="Imagen del hotel">
+      <h2>Hotel 2</h2>
       <p class="card__text">RIVER SUITE
         base price per night $390 $350</p>
         <p class="card__text">Master 2 Double Beds Non smoking with breakfast included: $376</p>
@@ -95,8 +129,10 @@
 					Master 2 Double Beds Non smoking with breakfast and jacuzzi included: $416
 				</p>
     </div>
-    <div class="card-general">
-      <img class="card__imagen" src="../images/oceanHouse.jpg" alt="imagen about hotel room">
+
+    <div class="cards" id="card3">
+      <img src="../images/oceanHouse.jpg" alt="Imagen del hotel">
+      <h2>Hotel 3</h2>
       <p class="card__text">
         1 double king size
         base price per night : $456 $390
@@ -106,9 +142,10 @@
       <p class="card__text">Grand Class 2 Double Beds Non Smoking
         Only 3 rooms left with breakfast and jacuzzi included : $461</p>
       </div>
-  </section>
-  <div class="button--form">
-    <a class="btn" href="../pages/hotelQ.html">form</a>
+    </div>
+
+    <button class="close-btn" id="close">Close</button>
+    <script src="../tap2.js"></script>
   </div>
   <footer> 
     <div class="footer-content">
