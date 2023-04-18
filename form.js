@@ -28,7 +28,7 @@ const repeatPassword = document.getElementById("input_repeatPassword");
 const form = document.getElementById("formSignIn");
 const listInputs = document.querySelectorAll(".form-input");
 const signup = document.querySelector('#signup-link');
-const modal = document.querySelector('#signup-modal');
+const signupmodal = document.querySelector('#signup-modal');
 
 function validacionForm() {
   form.lastElementChild.innerHTML = "";
@@ -79,7 +79,7 @@ form.addEventListener('submit', function(event) {
   sessionStorage.setItem('user', JSON.stringify(user));
 
   signup.innerHTML = `Bienvenid@, ${user.name}!`
-  modal.style.display = 'none'
+  signupmodal.style.display = 'none'
 });
 
 (function verificar(){
