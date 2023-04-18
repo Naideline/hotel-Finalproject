@@ -19,3 +19,17 @@ $(function() {
   });
   
   });
+
+  //Intento del saludo en el formulario
+  // Selecciona el campo de usuario y el botón "Create an account"
+  const userInput = document.getElementById("userInput");
+  const createAccountBtn = document.getElementById("createAccountBtn");
+  
+  // Agrega un evento onclick al botón "Create an account"
+  createAccountBtn.onclick = function() {
+    // Obtiene el valor ingresado en el campo de usuario
+    const userName = userInput.value;
+    
+    // Muestra un mensaje con el valor ingresado
+    alert("Welcome, " + userName + "!");
+  };
