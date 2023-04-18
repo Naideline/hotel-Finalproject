@@ -276,7 +276,7 @@ footer {
     margin-top: 15px; }
   .hero__title {
     font-size: 70px;
-    margin-top: 30px; }
+    margin-top: 100px; }
   .hero__subtitle {
     margin-top: 10px;
     font-size: 30px; }
@@ -421,6 +421,10 @@ footer {
   margin-bottom: 10px;
   font-size: 1rem; }
 
+.error_message {
+  color: red;
+}
+
 .logIn_a {
   float: right;
   text-decoration: none;
@@ -438,12 +442,23 @@ footer {
 
 .logIn_btn-changes {
   background-color: #ff962f;
-  color: #FFF; }
+  color: #FFF;
+  cursor: pointer; }
+
+  .logIn_btn-changes:hover {
+    background-color: #e67402;
+    color: #FFF; }
+
 
 .logIn_btn-changes1 {
   background-color: #FFF;
   color: #ff962f;
   border: #ff962f solid 1px; }
+
+  .logIn_btn-changes1:hover {
+    background-color: #eceaea;
+    color: #ff962f;
+    border: #ff962f solid 1px; }
 
 .logIn_span {
   display: flex;
@@ -464,6 +479,13 @@ footer {
 
 .logIn_span::after {
   margin-right: 10px; }
+
+.welcome_message {
+  text-align: center;
+  font-weight: bold;
+}
+
+
 
 @media screen and (min-width: 720px) and (max-width: 1024px) {
   .logIn_container {
@@ -517,10 +539,10 @@ footer {
     margin-top: 18px; }
   .logIn_btns-form {
     width: 100%;
-    margin-top: 70px; }
+    margin-top: 20px;}
   .logIn_btn {
     height: 12vh;
-    font-size: 2rem; }
+    font-size: 2rem;  }
   .logIn_span {
     font-size: 30px; } }
 
