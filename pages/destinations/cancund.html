@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
 </head>
+
 <body>
   <header>
     <nav class="nav__header">
@@ -35,33 +37,54 @@
           <a href="../hotels-list.html">Hotels</a>
         </li>
         <li>
-          <p><a href="#" id="signup-link">Sign up</a></p>
+          <a href="#" id="signup-link">Sign in</a>
           <!-- agregamos el HTML del formulario modal, con un ID para poder manipularlo con el DOM en JavaScript -->
           <div id="signup-modal" class="logIn_container" style="display: none;">
-            <form class="logIn_form" action="#" method="POST">
-              <div class="logIn_title">Log in</div>
+            <form id="formSignIn" class="logIn_form" action="#" method="POST">
+              <div class="logIn_title">Sign in</div>
               <div class="logIn_subtitle">Please enter your details:</div>
-              <div>
-                <label class="logIn_label" for="name">User:</label>
-                <input type="text" name="email" class="logIn_input" id="input" placeholder="User" required>
+
+              <div class="form-input input_name">
+                <label class="logIn_label" for="name">Name:</label>
+                <input type="text" name="name" class="logIn_input" id="input_name" placeholder="Name" Required>
+                <p class="error_message"></p>
               </div>
-              <div>
-                <label class="logIn_label" for="email">Password:</label>
-                <input type="password" name="password" class="logIn_input" id="input" placeholder="Password" required>
-                <a href="#" class="logIn_a">Forgot Password?</a>
+
+              <div class="form-input input_lastname">
+                <label class="logIn_label" for="lastname">Last Name:</label>
+                <input type="text" name="name" class="logIn_input" id="input_lastname" placeholder="LastName" Required>
+                <p class="error_message"></p>
               </div>
-              <div class="logIn_btns-form">
-                <input class="logIn_btn logIn_btn-changes" type="submit" value="Sing in">
+
+              <div class="form-input input_email">
+                <label class="logIn_label" for="email">Email:</label>
+                <input type="text" name="email" class="logIn_input" id="input_email" placeholder="Email" Required>
+                <p class="error_message"></p>
               </div>
-              <span class="logIn_span">Or</span>
-              <button class="logIn_btn logIn_btn-changes1">Create an account</button>
-              <a href="#" class="logIn_btn logIn_btn-changes1">Cancelar</a>
+
+              <div class="form-input input_password">
+                <label class="logIn_label" for="password">Password:</label>
+                <input type="password" name="password" class="logIn_input" id="input_password" placeholder="Password"
+                  Required>
+                <p class="error_message"></p>
+              </div>
+
+              <div class="form-input input_repeatPassword">
+                <label class="logIn_label" for="password">Repeat Password:</label>
+                <input type="password" name="password" class="logIn_input" id="input_repeatPassword"
+                  placeholder="RepeatPassword" Required>
+                <p class="error_message"></p>
+              </div>
+
+              <button class="logIn_btn logIn_btn-changes" type="submit" value="Sign in">submit</button>
+              <button class="logIn_btn logIn_btn-changes1" onclick="close(this)">Cancelar</button>
             </form>
             <script src="../../form.js"></script>
           </div>
         </li>
       </ul>
     </nav>
+
   </header>
   <main class="main-container">
     <h1 class="main-tittle">Cancún</h1>
@@ -72,7 +95,7 @@
     <button class="tablinks" onclick="openTab(event, 'hotels')">Hotels</button>
     <button class="tablinks" onclick="openTab(event, 'details')">Details</button>
   </div>
-  
+
   <div id="hotels" class="tabcontent">
     <div class="card">
       <a href="../cancun.html"><img src="../../images/hotelNomada.jpg.crdownload" alt="Hotel 1"></a>
@@ -82,7 +105,7 @@
         <span class="score">5.0</span>
       </div>
     </div>
-    
+
     <div class="card">
       <a href="../cancun.html"><img src="../../images/cancund7.webp" alt="Hotel 2"></a>
       <h3>Hotel Bella Vista</h3>
@@ -91,7 +114,7 @@
         <span class="score">5.0</span>
       </div>
     </div>
-    
+
     <div class="card">
       <a href="../cancun.html"><img src="../../images/cancundd2.jpg" alt="Hotel 3"></a>
       <h3>Hotel Margarita</h3>
@@ -101,7 +124,7 @@
       </div>
     </div>
   </div>
-  
+
   <div id="details" class="tabcontent">
     <p class="parraf">Cancun is a city in Mexico located on the Yucatan peninsula bordering the Caribbean Sea.
       Cancun is also a popular destination for students during the university vacation period in the spring,
@@ -125,7 +148,7 @@
 
   <script src="../../tap.js"></script>
 
-  <footer> 
+  <footer>
     <div class="footer-content">
       <p class="footer-title">GoTravel</p>
       <p class="info__line">Information</p>
@@ -152,8 +175,9 @@
       </ul>
     </div>
     <div class="footer-bottom">
-      <p class="rights-reserved">© GoTravel 2023  All right reserved</p>
+      <p class="rights-reserved">© GoTravel 2023 All right reserved</p>
     </div>
   </footer>
 </body>
+
 </html>
